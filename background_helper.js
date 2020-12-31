@@ -18,9 +18,26 @@ function initSpeedBtnHandlers () {
             speedBtn.addEventListener("click", function () {
                 setSpeed(parseFloat(speed));
             });
-            console.log(speedBtn.innerHTML, parseFloat(speedBtn.innerHTML));
         }());
     }
 }
 
-initSpeedBtnHandlers();
+function initSpeedInpHandler () {
+    var inp = document.getElementById("speedInp");
+    var btn = document.getElementById("speedInpBtn");
+    inp.addEventListener("keyup", function (e) {
+        if (e.key == "Enter") {
+            btn.click();
+        }
+    });
+    btn.addEventListener("click", function () {
+        setSpeed(parseFloat(inp.value));
+    });
+}
+
+function initEventHandlers () {
+    initSpeedBtnHandlers();
+    initSpeedInpHandler();
+}
+
+initEventHandlers();

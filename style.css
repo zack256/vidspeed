@@ -6,3 +6,7 @@ body {
     border : 2px solid black;
     padding : 1em;
 }
+
+button {
+    cursor: pointer;
+}
