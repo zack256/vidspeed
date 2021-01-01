@@ -1,9 +1,6 @@
 function setSpeedHTML (speed) {
-    console.log(speed);
     var video = document.getElementsByTagName("VIDEO")[0];
-    console.log(video);
     video.playbackRate = speed;
-    console.log(video.playbackRate);
 }
 
 chrome.runtime.onMessage.addListener(
