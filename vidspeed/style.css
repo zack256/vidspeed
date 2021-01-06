@@ -10,3 +10,11 @@ body {
 button {
     cursor: pointer;
 }
+
+#manualSelectMsg {
+    display : inline;
+}
+
+#manualSelectBtn {
+    float : right;
+}

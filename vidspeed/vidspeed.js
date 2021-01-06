@@ -1,3 +1,4 @@
+/**
 function messageContext (msg) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         var activeTab = tabs[0];
@@ -10,3 +11,4 @@ function setSpeed (speed) {
     //var video = document.getElementsByTagName("VIDEO")[0];
     //video.playBackRate = speed;
 }
+**/

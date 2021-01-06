@@ -35,9 +35,25 @@ function initSpeedInpHandler () {
     });
 }
 
+function manualSelectVideo () {
+    var p = document.getElementById("manualSelectMsg");
+    var btn = document.getElementById("manualSelectBtn");
+    p.innerHTML = "Selecting video";
+    btn.innerHTML = "Cancel";
+    messageContext({"message" : "manual_select"});
+}
+
+function initManualHandlers () {
+    var btn = document.getElementById("manualSelectBtn");
+    btn.addEventListener("click", function () {
+        manualSelectVideo();
+    });
+}
+
 function initEventHandlers () {
     initSpeedBtnHandlers();
     initSpeedInpHandler();
+    initManualHandlers();
 }
 
 initEventHandlers();
